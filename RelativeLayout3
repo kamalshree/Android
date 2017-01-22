@@ -1,0 +1,83 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/occean_image"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ocean"
+        />
+
+    <TextView
+        android:id="@+id/pebble_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pebble Beach"
+        android:textAppearance="?android:textAppearanceMedium" 
+        android:layout_toRightOf="@id/occean_image"
+        />
+
+    <TextView
+        android:id="@+id/cali_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="California"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:layout_toRightOf="@id/occean_image"
+        android:layout_below="@id/pebble_text"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 miles away"
+        android:textAppearance="?android:textAppearanceSmall" 
+        android:layout_toRightOf="@id/occean_image"
+        android:layout_below="@id/cali_text"
+        />
+
+</RelativeLayout>
+
+***************************************************
+padding and margin
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="#3D5AFE"
+>
+
+   
+    <TextView
+        android:text="You're invited!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="45sp"
+        android:background="#009688"
+        android:padding="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        
+        />
+
+	    <TextView
+        android:text="Bonfire at the beach"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:background="#E65100"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:paddingRight="72dp"
+       />
+
+</LinearLayout>
